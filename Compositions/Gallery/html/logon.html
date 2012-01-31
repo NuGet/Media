@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+ 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Nuget Log On</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="stylesheet" type="text/css" href="site.css">
+    
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->    
+	    
+</head>
+
+<body>
+    	<header class="top">
+        	<a href="homepage.html" class="logo"><img src="images/logo.png" alt="Nuget"></a>
+            
+            <div class="toplinks">
+            	<a href="logon.html" class="logon">Log On</a> <a href="#">Register</a>
+				  <div id="searchBox">
+                    <form action="/packages" method="get">
+                        <input name="q" id="searchBoxInput" placeholder="Search Packages" value="" />
+                        <input id="searchBoxSubmit" type="submit" value="Search" />
+                        <input type="hidden" name="sortOrder" value="package-download-count" />
+                    </form>
+                </div>
+            </div>
+        </header>
+        
+	<div class="container">
+
+        <section class="wrapper">
+        
+            <nav class="main">
+                <ul>
+                    <li><a href="package-list.html" class="nav-packages">Packages</a></li>
+                    <li><a href="submit.html" class="nav-submit">Submit</a></li>
+                    <li><a href="docs.html" class="nav-doc">Documentation</a></li>
+                    <li><a href="blog.html" class="nav-blog">Blog</a></li>                                                
+                </ul>
+            </nav>
+        
+			<section class="content logon">
+            	<h1>Log On</h1>
+
+                    <p>Don't have an account yet? <a href="/account/Register">Register now.</a></p>
+                           
+                    <form action="/users/account/LogOn" method="post">    
+                    	<div class="form-field ">
+                            <label for="UserNameOrEmail">Username or Email</label>
+                            <input class="text-box single-line" data-val="true" data-val-required="The Username or Email field is required." id="UserNameOrEmail" name="UserNameOrEmail" type="text" value="">
+           
+                      
+                            <label for="Password">Password</label>
+                            <input class="text-box single-line password" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" type="password" value="">
+	                    </div>
+                    
+                            <input type="submit" value="Log On" title="Log On">
+                            <a href="/account/ForgotPassword">Lost your Password?</a>
+                       
+                    </form>
+
+                
+            </section>
+        	
+        </section>
+        
+    </div>
+    <footer class="main">
+    	<section class="footerwrap">
+        	NuGet Documentation by <a href="http://www.outercurve.org/">Outercurve Foundation</a> is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a> except where otherwise noted.
+        </section>
+    </footer>
+
+</body>
+
+</html>    
+   

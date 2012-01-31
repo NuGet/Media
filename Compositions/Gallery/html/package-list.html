@@ -1,0 +1,219 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+ 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Nuget Packages</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="stylesheet" type="text/css" href="site.css">
+    
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->    
+	    
+</head>
+
+<body>
+    	<header class="top">
+        	<a href="homepage.html" class="logo"><img src="images/logo.png" alt="Nuget"></a>
+            
+            <div class="toplinks">
+            	<a href="logon.html" class="logon">Log On</a> <a href="#">Register</a>
+				  <div id="searchBox">
+                    <form action="/packages" method="get">
+                        <input name="q" id="searchBoxInput" placeholder="Search Packages" value="" />
+                        <input id="searchBoxSubmit" type="submit" value="Search" />
+                        <input type="hidden" name="sortOrder" value="package-download-count" />
+                    </form>
+                </div>
+            </div>
+        </header>
+        
+	<div class="container">
+
+        <section class="wrapper">
+        
+            <nav class="main">
+                <ul>
+                    <li><a href="package-list.html" class="nav-packages youarehere">Packages</a></li>
+                    <li><a href="submit.html" class="nav-submit">Submit</a></li>
+                    <li><a href="docs.html" class="nav-doc">Documentation</a></li>
+                    <li><a href="blog.html" class="nav-blog">Blog</a></li>                                                
+                </ul>
+            </nav>
+        
+			<section class="content">
+            	<h1>There are 4096 packages</h1>
+                <div class="meta-info">
+                	<span class="result-info">Displaying results 1 - 20</span>
+					<div class="sort">
+                        <form action="/packages" method="post">    
+                                <input type="hidden" name="q" value="">
+                                    <label for="sortOrder">Sort By</label>
+                                    <select name="sortOrder" id="sortOrder">
+                                            <option value="package-title">A-Z</option>    
+                        
+                                            <option value="package-download-count" selected="selected">Popularity</option>    
+                        
+                                            <option value="package-created">Recent</option>    
+                        
+                                    </select>
+                        </form>  
+                    </div>                  
+                </div>
+                
+                
+                <ol id="searchResults">
+                    <li>
+                        <section class="package ">
+                    <div class="side">
+                        <a href="package-details.html" title="View more about EntityFramework">
+                            <img src="images/packageDefaultIcon-50x50.png" alt="EntityFramework icon" >
+                        </a>
+                    </div>
+                    <div class="main">
+                        <header>
+                            <h1><a href="package-details.html">EntityFramework 4.2.0.0</a></h1>
+                            <h2>By:</h2>
+                            <ul class="owners">
+                                <li><a href="/profiles/romiller.com" title="romiller.com">romiller.com</a></li>
+                                <li><a href="/profiles/ajcvickers" title="ajcvickers">ajcvickers</a></li>
+                                <li><a href="/profiles/anpete" title="anpete">anpete</a></li>
+                            </ul>
+                        </header>
+                
+                        <p>
+                Entity Framework is Microsoft’s recommended data access technology for new applications.        </p>
+                
+                        <footer>
+                            <p class="downloads">
+                                180,601 downloads
+                            </p>
+                            
+                        </footer>
+                    </div>
+                </section>
+                    </li>
+                    
+                    <li>
+                        <section class="package ">
+                    <div class="side">
+                        <a href="package-details.html" title="View more about jQuery">
+                            <img src="https://nugetgallery.blob.core.windows.net/icons/jQuery.1.7.1.png" alt="jQuery icon">
+                        </a>
+                    </div>
+                    <div class="main">
+                        <header>
+                            <h1><a href="package-details.html">jQuery</a></h1>
+                            <h2>By:</h2>
+                            <ul class="owners">
+                                <li><a href="/profiles/damianedwards" title="damianedwards">damianedwards</a></li>
+                                <li><a href="/profiles/outercurve" title="outercurve">outercurve</a></li>
+                            </ul>
+                        </header>
+                
+                        <p>
+                jQuery is a new kind of JavaScript Library.
+                        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.        </p>
+                
+                        <footer>
+                            <p class="downloads">
+                                131,375 downloads
+                            </p>
+                            
+                            <div class="tags">
+                                <h2>Tags</h2>
+                                <ul class="tags">
+                                        <li><a href="/packages?q=jQuery" title="Search for jQuery">jQuery</a></li>
+                                </ul>
+                            </div>
+                        </footer>
+                    </div>
+                </section>
+                    </li>
+                    
+                    <li>
+                        <section class="package ">
+                    <div class="side">
+                        <a href="package-details.html" title="View more about jQuery Visual Studio 2010 IntelliSense">
+                            <img src="images/packageDefaultIcon-50x50.png" alt="jQuery.vsdoc icon">
+                        </a>
+                    </div>
+                    <div class="main">
+                        <header>
+                            <h1><a href="package-details.html">jQuery Visual Studio 2010 IntelliSense</a></h1>
+                            <h2>By:</h2>
+                            <ul class="owners">
+                                <li><a href="/profiles/damianedwards" title="damianedwards">damianedwards</a></li>
+                                <li><a href="/profiles/microsoft" title="microsoft">microsoft</a></li>
+                            </ul>
+                        </header>
+                
+                        <p>
+                vsdoc files for Visual Studio IntelliSense are now included in the core jquery NuGet package. As a result, this pacakge is obsolete and will not be updated past version 1.6. You can uninstall it.        </p>
+                
+                        <footer>
+                            <p class="downloads">
+                                43,420 downloads
+                            </p>
+                            
+                        </footer>
+                    </div>
+                </section>
+                    </li>
+
+                    <li>
+                        <section class="package ">
+                    <div class="side">
+                        <a href="package-details.html" title="View more about MvcScaffolding">
+                            <img src="images/packageDefaultIcon-50x50.png" alt="MvcScaffolding icon" >
+                        </a>
+                    </div>
+                    <div class="main">
+                        <header>
+                            <h1><a href="package-details.html">MvcScaffolding</a></h1>
+                            <h2>By:</h2>
+                            <ul class="owners">
+                                <li><a href="/profiles/stevesanderson" title="stevesanderson">stevesanderson</a></li>
+                            </ul>
+                        </header>
+                
+                        <p>
+                			A fast and customizable way to add controllers, views, and other items to your ASP.NET MVC application        </p>
+                
+                        <footer>
+                            <p class="downloads">
+                                37,578 downloads
+                            </p>
+                            
+                        </footer>
+                    </div>
+                </section>
+                    </li>
+                </ol> 
+                
+				<ul class="pager">
+		            <li class="previous">
+	                    <a href="" class="previous-on">Previous</a>
+    		        </li>
+		            <li class="next">
+	                    <a href="/packages?sortOrder=package-download-count&amp;page=2" class="next-on" title="Go to the next page.">Next</a>
+		            </li>
+		        </ul>           
+
+                
+            </section>
+        	
+        </section>
+        
+    </div>
+    <footer class="main">
+    	<section class="footerwrap">
+        	NuGet Documentation by <a href="http://www.outercurve.org/">Outercurve Foundation</a> is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a> except where otherwise noted.
+        </section>
+    </footer>
+
+</body>
+
+</html>    
+   
